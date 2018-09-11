@@ -29,6 +29,7 @@ public class HomePage {
                 tags[i] = e1.get(i).text().substring(1);
             }
         }
+        else tags=new String[0];
         contributor=e.getElementsByClass("contributor").first().text();
         e1=e.getElementsByClass("count");
         like=Integer.parseInt(e1.get(0).text());
