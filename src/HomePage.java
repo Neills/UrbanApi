@@ -74,14 +74,14 @@ public class HomePage {
 
 
 
-    @java.lang.Override
+    @Override
     public java.lang.String toString() {
         return "HomePage{" +
                 "date='" + date + '\'' +
                 ", word='" + word + '\'' +
                 ", meaning='" + meaning + '\'' +
                 ", example='" + example + '\'' +
-                ", tags=" + java.util.Arrays.toString(tags) +
+                ", tags=" + Arrays.toString(tags) +
                 ", contributor='" + contributor + '\'' +
                 ", like=" + like +
                 ", dislike=" + dislike +
