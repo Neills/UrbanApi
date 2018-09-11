@@ -2,7 +2,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import java.util.Arrays;
 
-public class HomePage {
+public class WordPanel {
 
     private String date;
     private String word;
@@ -15,7 +15,7 @@ public class HomePage {
     /**
      * @param e A div with "def-panel" class taken from the homepage
      * */
-    public HomePage(Element e){
+    public WordPanel(Element e){
         if(e.getElementsByClass("ribbon").size()>0) {
             date = e.getElementsByClass("ribbon").first().text();
             example = e.getElementsByClass("example").first().text();
@@ -76,7 +76,7 @@ public class HomePage {
 
     @Override
     public java.lang.String toString() {
-        return "HomePage{" +
+        return "WordPanel{" +
                 "date='" + date + '\'' +
                 ", word='" + word + '\'' +
                 ", meaning='" + meaning + '\'' +
