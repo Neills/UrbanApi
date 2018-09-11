@@ -13,7 +13,9 @@ public class HomePage {
     private final String contributor;
     private final int like;
     private final int dislike;
-
+    /**
+     * @param e A div with "def-panel" class taken from the homepage
+     * */
     public HomePage(Element e){
         date=e.getElementsByClass("ribbon").first().text();
         word=e.getElementsByClass("word").first().text();
